@@ -1,0 +1,25 @@
+{
+  "name": "genpark-personal-agent-microvascular-endothelial-fmd-elasticity-skill",
+  "version": "1.0.0",
+  "description": "Calculates brachial Flow-Mediated Dilation (FMD %), estimated vascular biological age, eNOS shear-stress bioavailability, and estimated Pulse Wave Velocity (ePWV).",
+  "tools": [
+    {
+      "name": "evaluate_brachial_fmd_and_vascular_age",
+      "description": "Calculates brachial Flow-Mediated Dilation (FMD %), NO bioavailability, and estimated vascular age.",
+      "parameters": {
+        "baseline_diameter_mm": "float (default 4.10)",
+        "peak_hyperemic_diameter_mm": "float (default 4.45)",
+        "chronological_age": "int (default 42)",
+        "sex": "string (default 'male')"
+      }
+    },
+    {
+      "name": "estimate_pulse_wave_velocity_and_arterial_stiffness",
+      "description": "Calculates estimated Pulse Wave Velocity (ePWV in m/s) and aortic arterial stiffness tier.",
+      "parameters": {
+        "age": "int (default 42)",
+        "mean_arterial_pressure": "float (default 93.3)"
+      }
+    }
+  ]
+}
